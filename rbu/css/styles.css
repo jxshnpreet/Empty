@@ -1,0 +1,25 @@
+ /* 1. Selectors */
+
+/* selector { cssProperty: cssValue: } */
+/* a.) Element selector - Select elements based on name */
+
+    h1 {
+    color: blue;
+    }
+
+/* b.) ID Selector - Selects the element based one the id*/
+    /* Id should be unique for everyone */
+
+    #heading-one {
+    color: lightcoral;
+    }
+
+/* c.) Class Selector - Selects the elements based on class name */
+    /* #para-one , #para-two ,#para-four {
+        color: gray;
+    }*/
+
+    .myPara{
+        color: purple;
+    }
+
