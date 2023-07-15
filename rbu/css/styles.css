@@ -1,48 +1,62 @@
- /* 1. Selectors */
+    /* 1. Selectors */
 
-/* selector { cssProperty: cssValue: } */
-/* a.) Element selector - Select elements based on name */
+    /* selector { cssProperty: cssValue: } */
+    /* a.) Element selector - Select elements based on name */
 
-    h1 {
-    color: blue;
-    }
+        h1 {
+        color: blue;
+        }
 
-/* b.) ID Selector - Selects the element based one the id*/
-    /* Id should be unique for everyone */
+    /* b.) ID Selector - Selects the element based one the id*/
+        /* Id should be unique for everyone */
 
-    #heading-one:hover {
-    color: lightcoral;
-    }
+        #heading-one:hover {
+        color: lightcoral;
+        }
 
-/* c.) Class Selector - Selects the elements based on class name */
-    /* #para-one , #para-two ,#para-four {
-        color: gray;
-    }*/
+    /* c.) Class Selector - Selects the elements based on class name */
+        /* #para-one , #para-two ,#para-four {
+            color: gray;
+        }*/
 
-    .myPara{
-        color: rgb(120, 19, 120);
-    }
+        .myPara{
+            color: rgb(120, 19, 120);
+        }
 
-/* d.) Attribute selector -  */
-    /* elementName[attributeName condition] */
-    /* i want to find the <a> whose href starts with https:// */
+    /* d.) Attribute selector -  */
+        /* elementName[attributeName condition] */
+        /* i want to find the <a> whose href starts with https:// */
 
-    a[href^="https://"]{
-        color: rgb(105, 105, 66);
-    }
+        a[href^="https://"]{
+            color: rgb(105, 105, 66);
+        }
 
-    /* a[href$=.jpg] */
-    /* a[href*="/"] */
-    /* img[src^="../"] */
+        /* a[href$=.jpg] */
+        /* a[href*="/"] */
+        /* img[src^="../"] */
 
-/* e.) Pseudo Selectors */
+    /* e.) Pseudo Selectors */
 
-    .unordered-list-item:first-child{
-        color: brown;
-    }
-    .unordered-list-item:last-child{
-        color: brown;
-    }
-    .unordered-list-item:nth-child(4){
-        color: maroon;
-    }
+        .unordered-list-item:first-child{
+            color: brown;
+        }
+        .unordered-list-item:last-child{
+            color: brown;
+        }
+        .unordered-list-item:nth-child(4){
+            color: maroon;
+        }
+
+    /* Colors & Gradients (color) */
+
+    /* Colors in CSS can be defined in 3 ways - colour picker use kroooo */
+        /* h1{color: #454ea3} */
+
+    /* Gradients -> 1. Linear Gradient 2. Radial Gradient  */
+
+        #Container-one{
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(to top right,red,rgba(0, 0, 255, 0.627),green,yellow);
+
+        }
