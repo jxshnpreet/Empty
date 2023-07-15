@@ -10,7 +10,7 @@
 /* b.) ID Selector - Selects the element based one the id*/
     /* Id should be unique for everyone */
 
-    #heading-one {
+    #heading-one:hover {
     color: lightcoral;
     }
 
@@ -20,6 +20,29 @@
     }*/
 
     .myPara{
-        color: purple;
+        color: rgb(120, 19, 120);
     }
 
+/* d.) Attribute selector -  */
+    /* elementName[attributeName condition] */
+    /* i want to find the <a> whose href starts with https:// */
+
+    a[href^="https://"]{
+        color: rgb(105, 105, 66);
+    }
+
+    /* a[href$=.jpg] */
+    /* a[href*="/"] */
+    /* img[src^="../"] */
+
+/* e.) Pseudo Selectors */
+
+    .unordered-list-item:first-child{
+        color: brown;
+    }
+    .unordered-list-item:last-child{
+        color: brown;
+    }
+    .unordered-list-item:nth-child(4){
+        color: maroon;
+    }
