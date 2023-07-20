@@ -149,6 +149,7 @@
     /* Fonts and Font-Family */
 
     /* CSS Flexbox */
+    /* Create a div and align a div & content of the div at the center of the page */
     #container{
         display: flex;
         /* flex-direction: */
@@ -157,13 +158,13 @@
     }
 
     .container-item{
-        width: 30px;
-        height: 23px;
+        width: 38px;
+        height: 47px;
         margin: 20px;
         text-align: center;
+        font-size: 41px;
         background-color: green;
         color: white;
     }
 
-    /* Create a div and align a div & content of the div at the center of the page */
     

@@ -6,7 +6,209 @@
     <title>Bootstrap</title>
 </head>
 <body>
-    <h2>Welcome to Bootstrap!</h2>
-    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
-</body>
+    <!-- 1. Downloading bootstrap -->
+    <!-- 2. Installing via npm -->
+    <!-- 3. Using bootstrap cdn -->
+    <!-- <h2>Welcome to Bootstrap!</h2> -->
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <div class="container-fluid"> <!--used for heading purpose-->
+        <h1 class="page-header">Welcome to Bootstrap!</h1> <!--page header used for a line below heading-->
+    </div>
+
+    <hr/>
+
+    <div class="container"> <!--lead class used for font change -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, iusto? Assumenda tenetur voluptas fugit repellat ipsam dolor recusandae, ullam natus. Quo et expedita sint, vitae nisi dignissimos neque ipsam quae!</p>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit, culpa, nisi quasi minus mollitia animi velit maxime dignissimos corrupti, eveniet esse a! Nostrum ad fugiat, eos voluptates iusto omnis!</p>
+    
+    <hr/>
+
+    <h3>Alignments and Texts</h3>
+    <p style="text-align: center;">Hello</p>
+    <p style="text-align: right;">Villu</p>
+
+    <hr/>
+
+    <h3>Contextual classes</h3>
+    <!-- primary-blue , success-green , danger-red  -->
+    <!-- muted-grey , info-light-blue , warning-yellow/orangish  -->
+    <!--Version 4 --- Secondary , light , dark-->
+    <p class="text-primary bg-warning">Primary</p>
+    <p class="text-success">success</p>
+    <p class="text-danger">danger</p>
+    <p class="text-muted">muted</p>
+    <p class="text-info">info</p>
+    <p class="text-warning">warning</p>
+
+    <p class="bg-primary">New One</p>
+    <p class="bg-success">success</p>
+    <p class="bg-danger">danger</p>
+    <!-- <p class="bg-muted">muted</p>  There's no such thing like bg muted because text can be muted but background can't -->
+    <p class="bg-info">info</p>
+    <p class="bg-warning">warning</p>
+    
+    <h3>Buttons / Submits & Anchors</h3>
+    <input class="btn btn-primary btn-sm" type="button" value="Click Here">
+    <input class="btn btn-warning btn-xs" type="submit">
+    <a class="btn btn-danger btn-lg" href="#">Anchor</a>
+
+    <hr/>
+
+    <h2>Tables</h2>
+    <table class="table border table-condensed table-hover">
+        <tr>
+            <th>Empl id</th>
+            <th>Name</th>
+            <th>Emp email</th>
+            <th>empl designation</th> 
+        </tr>
+        <tr>
+            <td>2001002047</td>
+            <td>Bhoot</td>
+            <td>bhoot652@gmail.com</td>
+            <td>Bhootian</td> 
+        </tr>
+        <tr>
+            <td>2001002047</td>
+            <td>Bhoot</td>
+            <td>bhoot652@gmail.com</td>
+            <td>Bhootian</td> 
+        </tr>
+        <tr>
+            <td>2001002047</td>
+            <td>Bhoot</td>
+            <td>bhoot652@gmail.com</td>
+            <td>Bhootian</td>
+        </tr>
+
+        </table>
+
+        <hr/>
+
+            <h3>HTML Signup Forms - </h3>
+                <br>
+            <div class="container-fluid">
+                <form action="https://www.myBE.php/">
+                        <!-- <span>Your Name : </span><input type=""  /> -->
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="enter your name..." /> 
+                        </div>
+                        <!-- Email :- username@hostname.com -->
+                        <div class="form-group">
+                            <input class="form-control" type="email" placeholder="enter your email..." />
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" placeholder="enter your password..." /> 
+                        </div>
+                        <div class="form-group">
+                            <label>Date of Birth - </label>
+                            <input class="form-control" type="date" /> 
+                        </div>
+                        <div class="form-group">
+                            <label>How well do you feel? - </label>
+                            <input class="form-control" type="range" />
+                        </div> 
+                        <label>Enter you gender - </label> 
+                        <!-- <input type="checkbox" /> Male <br />
+                        <input type="checkbox" /> Female <br />
+                        <input type="checkbox" /> Others <br /> -->
+                        <div class="form-group">
+                            <select>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select> 
+                        </div>
+                        <div class="form-group">
+                            <label>Upload you CV - </label>
+                            <input type="file" /> 
+                        </div>
+                        
+                        <div class="form-group">
+                            <button onclick="console.log('Btn was clicked!')">Click Me!</button>
+                        </div>
+                        <div class="form-group">
+                        <input class="btn-success" type="submit" value="Sign Up" />
+                        </div>
+                </form>
+            </div>
+
+            <hr>
+            <div class="container-fluid"><h3>Navigation Bar :-</h3></div>
+            <div class="container">
+            <ul class="list-unstyled">
+                <li>Item - 1</li>
+                <li>Item - 2</li>
+                <li>Item - 3</li>
+                <li>Item - 4</li>
+                <li>Item - 5</li>
+            </ul>
+
+            <ol style="display: flex; justify-content: space-between;" class="list-unstyled list-inline">
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <li> <a href="#">Products</a> </li>
+                <li> <a href="#">Contact</a> </li>
+                <li> <a href="#">About Us</a> </li>
+            </ol>
+        </div>
+
+        <hr />
+
+        <div class="container-fluid">
+            <h3>Panels :-</h3>
+        </div>
+        <div class="container">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h4 style="text-align: center;">Panel Heading</h4>
+                </div>
+                <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum repellendus ullam blanditiis ut corporis, a est mollitia omnis molestias officia doloremque veritatis aspernatur neque, doloribus porro consequatur facere quasi explicabo. Debitis error ipsum accusantium, in quod animi placeat itaque, ab assumenda voluptatem fugit veritatis distinctio praesentium porro quas numquam.</p>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+        <div class="container-fluid">
+            <h3>BS Grids :-</h3>
+        </div>
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <!-- One row can have at max of 12 cols -->
+                <div class="col-lg-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4 style="text-align: center;">Panel Heading</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum repellendus ullam blanditiis ut corporis, a est mollitia omnis molestias officia doloremque veritatis aspernatur neque, doloribus porro consequatur facere quasi explicabo. Debitis error ipsum accusantium, in quod animi placeat itaque, ab assumenda voluptatem fugit veritatis distinctio praesentium porro quas numquam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h4 style="text-align: center;">Panel Heading</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum repellendus ullam blanditiis ut corporis, a est mollitia omnis molestias officia doloremque veritatis aspernatur neque, doloribus porro consequatur facere quasi explicabo. Debitis error ipsum accusantium, in quod animi placeat itaque, ab assumenda voluptatem fugit veritatis distinctio praesentium porro quas numquam.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h4 style="text-align: center;">Panel Heading</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, cum repellendus ullam blanditiis ut corporis, a est mollitia omnis molestias officia doloremque veritatis aspernatur neque, doloribus porro consequatur facere quasi explicabo. Debitis error ipsum accusantium, in quod animi placeat itaque, ab assumenda voluptatem fugit veritatis distinctio praesentium porro quas numquam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
 </html>
