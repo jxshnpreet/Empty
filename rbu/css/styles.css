@@ -1,4 +1,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+    /* body{
+        background: linear-gradient(to bottom , rgb(149, 149, 192),rgba(217, 209, 220, 0.4));
+    } */
     /* 1. Selectors */
 
     /* selector { cssProperty: cssValue: } */
@@ -6,6 +9,8 @@
 
         h1 {
         color: blue;
+        text-align: center;
+        text-shadow: 10px 10px 5px black;
         font-family: Roboto,sans-serif;
         }
 
@@ -33,6 +38,7 @@
         * -> contains */
         a[href^="https://"]{
             color: rgb(105, 105, 66);
+            text-decoration:line-through;
         }
 
         /* a[href$=.jpg] */
@@ -78,7 +84,7 @@
         form {
             /* border: widthOfBorder style color; */
             /* style :- 1. solid, 2. dotted, 3. dashed, 4. double */
-            border: 3px dotted solid red;
+            border: 3px dotted red;
             
             /* 
             padding: a-px;
@@ -141,3 +147,23 @@
         }
 
     /* Fonts and Font-Family */
+
+    /* CSS Flexbox */
+    #container{
+        display: flex;
+        /* flex-direction: */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-item{
+        width: 30px;
+        height: 23px;
+        margin: 20px;
+        text-align: center;
+        background-color: green;
+        color: white;
+    }
+
+    /* Create a div and align a div & content of the div at the center of the page */
+    
