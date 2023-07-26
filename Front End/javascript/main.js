@@ -1,7 +1,6 @@
 // Not completely object oriented 
 // everything you can see is an object in js
 // interpreted language
-// 
 
 // Print values in the console :-
 console.log('This is a log!') 
@@ -92,13 +91,13 @@ console.log(arrObj)
 //     console.log(numbers[i]);
 // }
 
-// Array Methods 
+// 1. Array Methods 
 numbers.push(60)
 console.log(numbers);
 
 let myArr1 = [100, 200, 300, 400, 500]
 // let myArr2 = myArr1  This is not a copy Mech.
-// Arrat Spread Operator
+// Array Spread Operator
 let myArr2 = [ ...myArr1 ]
 myArr1.push(-10)
 myArr2.push(1000)
@@ -117,3 +116,92 @@ console.log(myArr1);
 
 let num1 = myArr1.concat(myArr2)
 console.log(num1);
+
+let dummyArray = [10, 'string', true, null, undefined, []]
+console.log(dummyArray);
+
+// let twoDArray = [ [10, 20, 30], [40, 50, 60], [70, 80, 90]]
+// let twoDArray = [ [], [], [] ]
+
+// console.log(twoDArray[1][1]);
+
+// 2. JS Objects :-
+// let myObj = { key: value1, key: value2 }
+let yay = {
+    name: 'new user',
+    email: 'abc@gmail.com',
+    password: '@#$',
+    hobbies: ['Music' , 'Dance' , 'Gaming'],
+    address: {
+        street: 'Street - 1' ,
+        City: 'Kharar',
+    }
+}
+console.log(yay);
+console.log(`Hi this is user ${yay.name}, my email is ${yay.email}, my password is ${yay.password} and hobbies are ${yay.hobbies}`);
+console.log(yay.hobbies[1]);
+console.log(yay.address.street);
+console.log(yay.address.City);
+
+let myObj = new Object()
+myObj.name = 'User One'
+myObj.email = 'userone@service.com'
+myObj.password = 'examplepwd'
+myObj.isEmployed = true
+myObj.hobbies = ['Music', 'Reading Books', 'Travelling']
+myObj.address = {
+    street: 'Street - 1',
+    city: 'Kharar',
+    state: 'Punjab',
+    pincodes: [1234, 5678]
+}
+console.log(myObj)
+
+// console.log(`Hi, this is user ${myObj.name}, my email is ${myObj.email} & my password is ${myObj.password}`)
+// console.log(myObj.hobbies[0])
+// console.log(myObj.address.city)
+// console.log(myObj.address.pincodes[1]);
+
+// 3. Array of Objects :- [ {}, {}, {} ]
+const users = 
+[
+    { name: 'new user',
+    email: 'abc@gmail.com',
+    password: '@#$',
+    hobbies: ['Music' , 'Dance' , 'Gaming'],
+    address: {
+        street: 'Street - 1' ,
+        City: 'Kharar',
+        Pincode: [140301 , 160001]
+    }},
+    { name: 'new user 2',
+    email: 'def@gmail.com',
+    password: 'qwerty',
+    hobbies: ['Music' , 'Dance' , 'Gaming'],
+    address: {
+        street: 'Street - 2' ,
+        City: 'Kharar',
+        Pincode: [140301 , 160001]
+    }},
+    { name: 'new user 3',
+    email: 'ghi@gmail.com',
+    password: '12345',
+    hobbies: ['Music' , 'Dance' , 'Gaming'],
+    address: {
+        street: 'Street - 3' ,
+        City: 'Kharar',
+        Pincode: [140301 , 160001]
+    }}
+]
+console.log(users[0].address.Pincode[0]);
+
+// 4. JSON (JavaScript Object Notation)
+// JS --> Interface --> JSON --> 2 Functions
+
+// 1. stringify() -> AoO to JSON
+const myJSONResponse = JSON.stringify(users);
+console.log(myJSONResponse)
+
+// 2. parse() -> JSON to AoO
+const convertAoO = JSON.parse(myJSONResponse)
+console.log(convertAoO)
