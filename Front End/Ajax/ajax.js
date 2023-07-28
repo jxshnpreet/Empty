@@ -57,20 +57,34 @@ console.log(`Second readyState --> ${xhr.readyState}`);
 xhr.onreadystatechange = () => { // Its a callbackfn and waiting for ready state to be changed to 4
     // 2 --> 3 --> 4
     console.log(`Remaining readyState --> ${xhr.readyState}`);
-    if (xhr.readyState == 4 && xhr.status == 200) {
+    if (xhr.readyState == 4 && xhr.status == 200) 
+    {
         // I will get the response from the server --> responseText
         // Send the Request
         const jsonRes = xhr.responseText;
         const res = JSON.parse(jsonRes)
 
-        const userImg = document.createElement('img')
-        userImg.setAttribute('src', res[0].avatar_url)
-        const userName = document.createElement('h4')
-        userName.textContent = res[0].login
+        let output = ''
+        for (let i = 0; i < res.length; i++) 
+        {
+            output += `
+            <div style = "margin: 10px;">
+                <img src = "${res[i].avatar_url}" /> <br/>
+                <p class = 'lead'>${res[i].login}</p>
+            </div>
+        `
+        }
+        console.log(output);
+        document.getElementById('my-div').innerHTML = output
 
-        console.log(userName);
-        console.log(userImg);
-        console.log(res);
+        // const userImg = document.createElement('img')
+        // userImg.setAttribute('src', res[0].avatar_url)
+        // const userName = document.createElement('h4')
+        // userName.textContent = res[0].login
+
+        // console.log(userName);
+        // console.log(userImg);
+        // console.log(res);
     }
 }
 xhr.send()
